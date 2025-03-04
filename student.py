@@ -22,4 +22,21 @@ def failed_students(students , passing_score=50)
         {"name":"Asan", "grade", [47 , 61 , 79]}
         {"name":"Nuri", "grade", [58 , 70 ,81]}
     ]
-   print(failed_students(students , passing_score=50))
+#    print(failed_students(students , passing_score=50))
+
+class student:
+    def __init__(self , name , student_id , grades):
+      self.name = name
+      self.student_id = student_id
+      self.grades = grades
+    def add_grade(self , grade):
+      self.grades.append(grade)
+    def calculate_average(self):
+        average = sum(self.grades) / len(self.grades)
+        return average
+
+        def display_info(self):
+            print(f"student:{self.mname}, Student id:{self.student_id},Grade: {self.grades}")
+      std = Student("ali" ,101 , 97)
+      std.add_grade()
+      std.display_info()
