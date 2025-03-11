@@ -36,7 +36,20 @@ class student:
         return average
 
         def display_info(self):
-            print(f"student:{self.mname}, Student id:{self.student_id},Grade: {self.grades}")
-      std = Student("ali" ,101 , 97)
-      std.add_grade()
-      std.display_info()
+            print(f"student:{self.name}, Student id:{self.student_id},Grade: {self.grades}")
+      std = Student("Alice" ,101 )
+      std.add_grade(88)
+      std.add_grade(92)
+      std.add_grade(100)
+    #   std.display_info()     
+class student:
+    def ___init__(self , name , student_id , grades):
+        self.name = name
+        self.student_id = student_id
+        self. grades = grades
+    def add_grade(self ,grade):
+        self.grades.append(grade)
+    def calculate_average(self):
+        return sum(self.grades)
+        
+
